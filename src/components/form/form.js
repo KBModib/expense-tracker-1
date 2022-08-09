@@ -61,56 +61,48 @@ const FormInput = () => {
     <View>
       <Input
         label={"TRANSACTION NAME"}
-        labelStyle={{ color: "#757575" }}
-        placeholder="Enter text . . ."
+        labelStyle={{ color: "#000" }}
+        placeholder="Enter transaction name"
         value={text}
         onChangeText={(text) => setText(text)}
         leftIcon={
           <Icon
             name="text"
             type="entypo"
-            size={18}
-            color="#9980FA"
+            size={16}
+            color="#05445E"
           />
         }
       />
       <Input
         label="TRANSACTION AMOUNT"
-        labelStyle={{ color: "#757575" }}
+        labelStyle={{ color: "#000" }}
         keyboardType="numeric"
-        placeholder="Enter Amount . . ."
+        placeholder="R"
         value={amount}
         onChangeText={(text) => setAmount(Number(text))}
-        leftIcon={
-          <Icon
-            name="attach-money"
-            type="material-icons"
-            size={18}
-            color="#2ed573"
-          />
-        }
       />
       <View style={{ flexDirection: "row", alignSelf: "center" }}>
       <Button
           buttonStyle={{
-            backgroundColor: "#eb4d4b",
+            backgroundColor: "#F51720",
             marginTop: 10,
             width: 150,
             marginRight: 5,
             borderRadius:30
           }}
-          title="- CASH OUT"
+          title="-TAKING AN L"
           onPress={() => onWithdraw()}
         />
         <Button
           buttonStyle={{
-            backgroundColor: "#6ab04c",
+            backgroundColor: "#81B622",
             marginTop: 10,
             width: 150,
             marginLeft: 5,
             borderRadius:30
           }}
-          title="+ CASH IN"
+          title="+TO MORE Ws"
           onPress={() => onSubmit()}
         />
         
