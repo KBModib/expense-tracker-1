@@ -3,7 +3,6 @@ import { HeaderBackground } from "@react-navigation/elements";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { NavigationContainer } from "@react-navigation/native";
 import HomeScreen from "../screens/homeScreen";
-import AboutScreen from "../screens/aboutScreen";
 import TransactionScreen from "../screens/transactionScreen";
 import TransHistoryScreen from "../screens/transHistoryScreen";
 
@@ -41,19 +40,10 @@ const NavigationBar = () => {
                 <HeaderBackground style={{ backgroundColor: "#2083F8" }} />
               ),
             }}
-            name="History"
+            name="Transaction Log"
             component={TransHistoryScreen}
           />
-          <Drawer.Screen
-            options={{
-              headerTintColor: "#fff",
-              headerBackground: () => (
-                <HeaderBackground style={{ backgroundColor: "#2083F8" }} />
-              ),
-            }}
-            name="About"
-            component={AboutScreen}
-          />
+          
         </Drawer.Navigator>
       </NavigationContainer>
     </>
