@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "expense-tracker",
-    "slug": "expense-tracker",
+    "name": "All-Saver",
+    "slug": "All-Saver",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/appIcon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/appIcon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#D4F1F4"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -18,17 +18,17 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.mhsaeed.expensetracker"
+      "bundleIdentifier": "com.kbmodi.allsaver"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/appIcon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#D4F1F4"
       },
-      "package": "com.mhsaeed.expensetracker"
+      "package": "com.kbmodi.allsaver"
     },
     "web": {
-      "favicon": "./assets/expense-tracker.png"
+      "favicon": "./assets/appIcon.png"
     }
   }
 }
