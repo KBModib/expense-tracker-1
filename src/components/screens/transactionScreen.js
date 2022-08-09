@@ -9,7 +9,7 @@ const TransactionScreen = () => {
   return (
     <ScrollView style={{ flex: 1 }}>
       <LinearGradient
-        colors={["#e1f5fe", "#fff"]}
+        colors={["#189AB4","#D4F1F4"]}
         start={{ x: 0, y: 0.5 }}
         end={{ x: 1, y: 1 }}
       >
@@ -47,7 +47,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     height: 150,
     width: 300,
-    // backgroundColor:"red"
   },
   form: {
     width: 310,

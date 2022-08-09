@@ -12,7 +12,7 @@ const HomeScreen = ({ navigation }) => {
     <View style={styles.container}>
       <Tab.Navigator>
         <Tab.Screen name="Transaction" component={TransactionScreen} />
-        <Tab.Screen name="History" component={TransHistoryScreen} />
+        <Tab.Screen name="Transaction Log" component={TransHistoryScreen} />
       </Tab.Navigator>
     </View>
   );
