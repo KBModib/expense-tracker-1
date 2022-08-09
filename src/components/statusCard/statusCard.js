@@ -23,11 +23,11 @@ const StatusCard = () => {
       <View style={styles.cardContainer}>
         <Card title="Income" containerStyle={styles.card1}>
           <Text style={styles.text}>INCOME</Text>
-          <Text style={styles.textIncome}>${income}</Text>
+          <Text style={styles.textIncome}>R{income}</Text>
         </Card>
         <Card title="Expense" containerStyle={styles.card2}>
-          <Text style={styles.text}>EXPENSE</Text>
-          <Text style={styles.textExpense}>${expense}</Text>
+          <Text style={styles.text}>EXPENSES</Text>
+          <Text style={styles.textExpense}>R{expense}</Text>
         </Card>
       </View>
     </View>
@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     borderRadius: 6,
     left: 8,
+    backgroundColor: "#05445E",
   },
   card2: {
     height: 120,
@@ -52,9 +53,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     borderRadius: 6,
     right: 8,
+    backgroundColor: "#05445E",
   },
   text: {
     alignSelf: "center",
+    fontSize: 16,
+    color: "#fff",
   },
   textIncome: {
     fontSize: 24,

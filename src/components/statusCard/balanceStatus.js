@@ -9,8 +9,8 @@ const BalanceStatus = () => {
 
   return (
     <View>
-      <Text>YOUR BALANCE</Text>
-      <Text style={styles.text}>${total}</Text>
+      <Text>CURRENT BALANCE</Text>
+      <Text style={styles.text}>R{total}</Text>
     </View>
   );
 };
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: "#009432",
     fontWeight: "800",
-    // alignSelf:"center"
+    alignSelf:"center"
   },
 });
 
